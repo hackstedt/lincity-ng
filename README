@@ -82,11 +82,21 @@ The configure script also lets you set some more options like the installation
 directory (--prefix argument). You'll get a full list of these if you invoke
 "configure --help".
 
+NOTE: On OSX, you must run the following commands instead to build:
+    ./autogen.sh
+    cd osx
+    ./build.sh
+This will create a LinCity-NG.app file that will directly launch the game.
+
 2.3 Starting the game
 
 You can start the game by typing
 
     lincity-ng
+
+NOTE: On OSX, launch the game with the generated .app file.
+If you get a white screen, modify ~/.lincity-ng/userconfig.xml and change the below values.
+    useOpenGL="no" fullscreen="no" 
 
 2.4 Exit the game
 
@@ -175,4 +185,3 @@ You can contact us at the lincity-ng-devel mailinglist:
 or you might be able to catch us in irc at irc.freenode.net #lincity.
 
 Visit our homepage: https://github.com/lincity-ng/lincity-ng
-
