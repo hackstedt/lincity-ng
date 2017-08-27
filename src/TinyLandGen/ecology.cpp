@@ -6,10 +6,10 @@
  * @license 	GPL v3 or later
  */
 
-#include "lctypes.h"
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
+#include "lctypes.h"
 
 extern lmap_struct lmap;
 extern int alt_min, alt_max, alt_step;
