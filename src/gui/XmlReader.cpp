@@ -43,7 +43,7 @@ XmlReader::XmlReader(const std::string& filename)
         throw std::runtime_error(msg.str());
     }
     
-    reader = xmlReaderForIO(readCallback, closeCallback, file, 
+    reader = xmlReaderForIO(readCallback, closeCallback, file,
             0, 0, XML_PARSE_NONET);
     if(reader == 0) {
         PHYSFS_close(file);

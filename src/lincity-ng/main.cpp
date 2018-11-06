@@ -133,9 +133,16 @@ void initPhysfs(const char* argv0)
     }
 
     PHYSFS_freeList(rc);
-
+    
     // when started from source dir...
+    
+    
+    //std::string dir = PHYSFS_getBaseDir();
+    //*******TODO:временно что бы пофиксить баг идеи
     std::string dir = PHYSFS_getBaseDir();
+    dir+="../";
+    //*******
+    
     dir += "data";
     std::ostringstream testfname;
     //TODO: Windows/Mingw does not like this test on other machine?

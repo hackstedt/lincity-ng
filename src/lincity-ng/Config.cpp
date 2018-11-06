@@ -45,8 +45,8 @@ Config::Config()
 
     //Default Values
     useOpenGL = true;  //OpenGL is often way too slow
-    useFullScreen = true;
-    videoX = 1024;
+    useFullScreen = false;
+    videoX = 1366;
     videoY = 768;
 
     soundVolume = 100;

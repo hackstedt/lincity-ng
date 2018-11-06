@@ -811,19 +811,19 @@ void GameView::event(const Event& event)
                 {   ctrDrag = !ctrDrag;}
                 break;
             }
-            if( event.keysym.sym == SDLK_KP8 || event.keysym.sym == SDLK_UP ){
+            if( event.keysym.sym == SDLK_KP8 || event.keysym.sym == SDLK_UP || event.keysym.sym == SDLK_w ){
                 keyScrollState |= SCROLL_UP;
                 break;
             }
-            if( event.keysym.sym == SDLK_KP2 || event.keysym.sym == SDLK_DOWN ){
+            if( event.keysym.sym == SDLK_KP2 || event.keysym.sym == SDLK_DOWN || event.keysym.sym == SDLK_s){
                 keyScrollState |= SCROLL_DOWN;
                 break;
             }
-            if( event.keysym.sym == SDLK_KP4 || event.keysym.sym == SDLK_LEFT ){
+            if( event.keysym.sym == SDLK_KP4 || event.keysym.sym == SDLK_LEFT || event.keysym.sym == SDLK_a){
                 keyScrollState |= SCROLL_LEFT;
                 break;
             }
-            if( event.keysym.sym == SDLK_KP6 || event.keysym.sym == SDLK_RIGHT ){
+            if( event.keysym.sym == SDLK_KP6 || event.keysym.sym == SDLK_RIGHT || event.keysym.sym == SDLK_d){
                 keyScrollState |= SCROLL_RIGHT;
                 break;
             }
@@ -911,19 +911,19 @@ void GameView::event(const Event& event)
                 break;
             }
             //Scroll
-            if( event.keysym.sym == SDLK_KP8 || event.keysym.sym == SDLK_UP ){
+            if( event.keysym.sym == SDLK_KP8 || event.keysym.sym == SDLK_UP || event.keysym.sym == SDLK_w){
                 keyScrollState &= ~SCROLL_UP;
                 break;
             }
-            if( event.keysym.sym == SDLK_KP2 || event.keysym.sym == SDLK_DOWN ){
+            if( event.keysym.sym == SDLK_KP2 || event.keysym.sym == SDLK_DOWN || event.keysym.sym == SDLK_s){
                 keyScrollState &= ~SCROLL_DOWN;
                 break;
             }
-            if( event.keysym.sym == SDLK_KP4 || event.keysym.sym == SDLK_LEFT ){
+            if( event.keysym.sym == SDLK_KP4 || event.keysym.sym == SDLK_LEFT || event.keysym.sym == SDLK_a){
                 keyScrollState &= ~SCROLL_LEFT;
                 break;
             }
-            if( event.keysym.sym == SDLK_KP6 || event.keysym.sym == SDLK_RIGHT ){
+            if( event.keysym.sym == SDLK_KP6 || event.keysym.sym == SDLK_RIGHT || event.keysym.sym == SDLK_d ){
                 keyScrollState &= ~SCROLL_RIGHT;
                 break;
             }
